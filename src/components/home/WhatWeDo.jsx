@@ -1,5 +1,5 @@
 import child from "../../assets/home/what_we_do.png";
-import line from "../../assets/home/lines/line2.png";
+import line from "../../assets/home/lines/line2.svg";
 
 const WhatWeDo = () => {
   return (

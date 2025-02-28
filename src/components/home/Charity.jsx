@@ -1,4 +1,4 @@
-import line from "../../assets/home/lines/line3.png";
+import line from "../../assets/home/lines/line3.svg";
 
 const Charity = () => {
   const boxes = [

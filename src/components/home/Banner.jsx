@@ -4,7 +4,7 @@ import bubble2 from "../../assets/home/banner_bubble2.png";
 import bubble3 from "../../assets/home/banner_bubble3.png";
 import bubble4 from "../../assets/home/banner_bubble4.png";
 import bubble5 from "../../assets/home/banner_bubble5.png";
-import line from "../../assets/home/lines/line1.png";
+import line from "../../assets/home/lines/line1.svg";
 
 const Banner = () => {
   return (

@@ -2,6 +2,7 @@ import Volunteers1 from "../../assets/home/Volunteers1.png";
 import Volunteers2 from "../../assets/home/Volunteers3.png";
 import Volunteers3 from "../../assets/home/Volunteers2.png";
 import Volunteers4 from "../../assets/home/Volunteers4.png";
+import line from '../../assets/home/lines/line4.svg'
 
 const Volunteers = () => {
   return (
@@ -43,7 +44,7 @@ const Volunteers = () => {
           </p>
         </div>
       </div>
-      <div className="w-[60%] py-20">
+      <div className="w-[60%] mb-5 py-20">
         <h1 className="text-2xl mb-2 font-bold text-gray-800">
           Highest form of love
         </h1>
@@ -58,7 +59,11 @@ const Volunteers = () => {
           </button>
         </div>
       </div>
-      <div></div>
+      <div className="flex mb-10 gap-4 items-center">
+        <p className="text-2xl mb-2 font-bold text-gray-800">Love</p>
+        <img src={line} alt="line" />
+        <p className="text-2xl mb-2 font-bold text-gray-800">Found</p>
+      </div>
     </div>
   );
 };
