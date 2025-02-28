@@ -1,0 +1,9 @@
+.glass {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.087);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+}
+
+.ju {
+  color: #006400 ;
+}

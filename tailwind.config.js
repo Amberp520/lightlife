@@ -1,11 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        righteous: ["Righteous", "serif"],
+        raleway: ["Raleway", "serif"],
+        bitter: ["Bitter", "serif"]
+      },
+      screens: {
+        xs: "400px",
+        sm: "600px",
+        md: "800px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+        "3xl": "1792px",
+      },
+      colors: {
+        primary: "#006400",
+      },
+    },
   },
   plugins: [],
-}
-
+};
