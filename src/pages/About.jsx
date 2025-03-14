@@ -1,7 +1,13 @@
+import NavBar from "../common/NavBar";
+import Banner from "../components/about/Banner";
+
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <NavBar />
+      <Banner />
+    </>
+  );
+};
 
-export default About
+export default About;
