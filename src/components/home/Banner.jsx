@@ -52,7 +52,7 @@ const Banner = () => {
         src={bubble5}
         alt="bubble5"
       />
-      <img className="absolute opacity-50 -top-20 right-[30%] -z-10" src={line} alt="" />
+      <img className="opacity-50 absolute -top-20 right-[30%] -z-10" src={line} alt="" />
     </div>
   );
 };
