@@ -15,7 +15,7 @@ const Charity = () => {
           working on it
         </h1>
         <img
-          className="absolute h-[100px] -top-14 right-[56%]"
+          className="opacity-50 absolute h-[100px] -top-14 right-[56%]"
           src={line}
           alt=""
         />
@@ -25,9 +25,9 @@ const Charity = () => {
           {boxes.map((box, i) => (
             <div
               key={i}
-              className="basis-1/3 rounded-lg flex gap-2 bg-[#F3F2E7] items-center justify-center py-7"
+              className="basis-1/3 rounded-lg flex gap-2 bg-[#F3F2E7] items-center justify-center py-10"
             >
-              <p className="font-bitter text-[#C07746] text-[33px] font-semibold">
+              <p className="font-bitter text-primary text-[33px] font-semibold">
                 {box.num}k+
               </p>
               <div>
