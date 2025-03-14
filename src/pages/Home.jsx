@@ -1,3 +1,4 @@
+import Footer from "../common/Footer";
 import NavBar from "../common/NavBar";
 import Banner from "../components/home/Banner";
 import Charity from "../components/home/Charity";
@@ -14,6 +15,7 @@ const Home = () => {
       <Charity />
       <Volunteers />
       <Events />
+      <Footer />
     </>
   );
 };
