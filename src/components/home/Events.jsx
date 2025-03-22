@@ -5,7 +5,7 @@ import line from '../../assets/home/lines/line5.svg'
 const Events = () => {
   return (
     <div className="absolute flex justify-center w-full translate-y-[-200px]">
-      <div className="grid grid-cols-2 gap-[50px] px-20 py-8 h-[380px] w-[80%] bg-[#F3F2E7] rounded-lg">
+      <div className="grid grid-cols-2 gap-[50px] px-20 py-8 h-[380px] w-[80%] bg-[#F3F2E7] shadow-lg rounded-lg">
         <div>
           <p className="text-[13px] mb-4">
             <span>_</span>EVENTS

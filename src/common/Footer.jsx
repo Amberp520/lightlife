@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex items-end text-white bg-primary h-[500px] py-7 px-20">
+    <div className="flex items-end text-white bg-[#004f00] h-[500px] py-7 px-20">
       <div className="flex flex-col justify-between h-1/2 w-full">
         <div className="flex justify-between w-full">
           {footerInfo.map((info, index) => (
