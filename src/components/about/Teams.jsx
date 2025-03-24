@@ -1,11 +1,10 @@
-import React from "react";
 import pastor from "../../assets/about/pastor.jpg";
 import priest from "../../assets/about/priest.jpg";
 
 const Teams = () => {
   return (
     <>
-      <div className="h-[65rem]">
+      <div className="h-fit mb-20">
         <p className="text-[2rem] text-center font-bitter py-[5rem]">
           Meet Our Team
         </p>
