@@ -36,11 +36,11 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex items-end text-white bg-[#004f00] h-[500px] py-7 px-20">
-      <div className="flex flex-col justify-between h-1/2 w-full">
-        <div className="flex justify-between w-full">
+    <div className="flex items-end text-white bg-[#004f00] h-fit lg:h-[500px] py-7 px-10 lg:px-20">
+      <div className="flex flex-col justify-between mt-[150px] lg:h-1/2 w-full">
+        <div className="flex flex-wrap gap-10 justify-between w-full">
           {footerInfo.map((info, index) => (
-            <div className="flex flex-col gap-3" key={index}>
+            <div className="flex flex-col gap-3 w-[45%] md:w-[25%] lg:w-fit" key={index}>
               <h1 className="font-bitter text-[15px] opacity-70">
                 {info.title}
               </h1>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 py-5 lg:py-0 items-center justify-between">
           <img src={logo} alt="" />
           <div className="flex gap-10">
             <p className="text-[14px]">Privacy Policy</p>

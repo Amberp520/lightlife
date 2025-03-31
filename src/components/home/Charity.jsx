@@ -21,11 +21,11 @@ const Charity = () => {
         />
       </div>
       <div className="flex justify-center w-full">
-        <div className="w-[70%] flex gap-5">
+        <div className="w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {boxes.map((box, i) => (
             <div
               key={i}
-              className="basis-1/3 rounded-lg flex gap-2 bg-[#F3F2E7] items-center justify-center py-10"
+              className="rounded-lg flex gap-2 bg-[#F3F2E7] items-center justify-center py-10"
             >
               <p className="font-bitter text-primary text-[33px] font-semibold">
                 {box.num}k+

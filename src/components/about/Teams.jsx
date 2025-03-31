@@ -8,9 +8,8 @@ const Teams = () => {
         <p className="text-[2rem] text-center font-bitter py-[5rem]">
           Meet Our Team
         </p>
-
-        <div className="h-full flex justify-center content-center">
-          <div className="flex flex-row justify-center w-[75rem] gap-20">
+        <div className="h-full flex justify-center w-full">
+          <div className="flex flex-wrap w-full justify-center lg:w-[90%] gap-20">
             <div className="h-[30rem] w-[20.1rem] rounded-lg shadow-lg">
               <div className="h-[20rem] w-[20rem] bg-white rounded-lg">
                 <img
@@ -25,21 +24,21 @@ const Teams = () => {
                 </p>
               </div>
             </div>
-
-            <div>
-              <p className="pt-[9rem] text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloremque iure deleniti tenetur praesentium voluptatibus! Odio
-                reprehenderit maxime non ducimus aliquam! Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Iste, excepturi!
-              </p>
-              <div className="flex justify-center w-full">
-                <button className="py-2 px-5 bg-primary rounded-lg text-white mt-12 content-center text-[0.9rem]">
-                  Volunteer Now
-                </button>
+            <div className="md:h-[30rem] flex items-center">
+              <div className="h-fit flex flex-col justify-center">
+                <p className="w-[300px] text-justify">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque iure deleniti tenetur praesentium voluptatibus!
+                  Odio reprehenderit maxime non ducimus aliquam! Lorem ipsum
+                  dolor, sit amet consectetur adipisicing elit. Iste, excepturi!
+                </p>
+                <div className="flex justify-center w-full">
+                  <button className="py-2 px-5 bg-primary rounded-lg text-white mt-12 content-center text-[0.9rem]">
+                    Volunteer Now
+                  </button>
+                </div>
               </div>
             </div>
-
             <div className="h-[30rem] w-[20.1rem] rounded-lg shadow-lg">
               <div className="h-[20rem] w-[20rem] bg-white rounded-lg">
                 <img

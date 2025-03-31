@@ -1,12 +1,11 @@
-import React from "react";
 import caprisun from "../../assets/about/caprisun.jpg";
 import child from "../../assets/about/child.jpg";
 
 const History = () => {
   return (
     <>
-      <div className="grid grid-cols-[40%_55%] gap-28 py-28 px-10 overflow-hidden">
-        <div className="h-[500px] relative">
+      <div className="grid lg:grid-cols-[40%_55%] gap-28 py-10 lg:py-28 px-10 overflow-hidden">
+        <div className="hidden lg:block h-[500px] relative">
           <img
             className="h-full w-full absolute object-cover rounded-xl top-0 left-0"
             src={caprisun}
@@ -20,8 +19,11 @@ const History = () => {
         </div>
         <div>
           <p className="text-[1.4rem] font-bitter text-primary mb-4">History</p>
-          <p className="text-[2.8rem] font-bitter mb-8">Welcome to Light <br /> and life Human Development <br /> Foundation</p>
-          <p className="w-[80%]">
+          <p className="text-[1.6rem] lg:text-[2.8rem] font-bitter mb-4 lg:mb-8">
+            Welcome to Light <br className="hidden lg:block" /> and life Human
+            Development <br className="hidden lg:block" /> Foundation
+          </p>
+          <p className="lg:w-[80%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
             minima ratione porro nemo et similique voluptate amet officia dicta
             repellendus suscipit, hic nulla ut a possimus assumenda eaque?
