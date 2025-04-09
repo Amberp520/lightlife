@@ -6,6 +6,14 @@ import {
   FaUsers,
   FaBookOpen,
 } from "react-icons/fa";
+import hand from "../assets/about/hand.jpg";
+import kind from "../assets/about/kind.jpg";
+import child from "../assets/about/child.jpg";
+import children from "../assets/about/children.jpg";
+import aid from "../assets/about/Aid.jpg";
+import cap from "../assets/about/caprisun.jpg";
+import help from "../assets/about/hand1.jpg";
+import please from "../assets/about/hand2.jpg";
 
 const faqItems = [
   {
@@ -52,4 +60,43 @@ const faqItems = [
   },
 ];
 
-export { faqItems };
+const eventsOptions = [
+  {
+    image: kind,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+  {
+    image: child,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+  {
+    image: children,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+  {
+    image: kind,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+  {
+    image: cap,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+  {
+    image: help,
+    title: "Raise Funds for clean and healthy food",
+    writeup:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit harum magni facilis quae mollitia ipsum, enim ratione consectetur tenetur illum debitis fugit rem vitae necessitatibus velit ipsa neque odit beatae?",
+  },
+];
+
+export { faqItems, eventsOptions };

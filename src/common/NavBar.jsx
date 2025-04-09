@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo2.png";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
 const NavBar = () => {
-  const navOptions = ["What we do", "Who we are", "Get involved", "About us"];
+  const navOptions = ["Home", "About us", "Events", "Contact us"];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,8 +16,8 @@ const NavBar = () => {
   };
 
   return (
-    <div className="sticky top-0 left-0 z-[100] flex items-center justify-between glass py-4 px-5">
-      <img src={logo} alt="Logo" className="h-[30px] object-cover" />
+    <div className="h-20 sticky top-0 left-0 z-[100] flex items-center justify-between glass py-4 px-5">
+      <img src={logo} alt="Logo" className="w-[12rem] object-cover" />
       <div className="hidden lg:flex items-center gap-20">
         <div className="flex items-center gap-10">
           {navOptions.map((item, i) => (

@@ -2,6 +2,7 @@ import kind from "../../assets/about/kind.jpg";
 import hand from "../../assets/about/hand.jpg";
 import donation from "../../assets/about/donations.jpg";
 import aid from "../../assets/about/Aid.jpg";
+import children from "../../assets/about/children.jpg"
 
 const Mv = () => {
   return (
@@ -60,7 +61,7 @@ const Mv = () => {
         <div className="w-full block mb-7">
           <img
             className="w-full md:w-[38rem] h-[370px] object-cover lg:rounded-xl"
-            src={aid}
+            src={children}
             alt=""
           />
         </div>

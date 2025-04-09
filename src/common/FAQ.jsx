@@ -9,7 +9,7 @@ const FAQ = () => {
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center w-full gap-10 lg:gap-0 px-5 justify-between mb-[260px] lg:px-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center w-full gap-10 lg:gap-0 px-5 justify-between mb-[260px] lg:px-20 py-[7rem]">
       <div className="flex flex-col h-full justify-center">
         <h1 className="mb-4 text-[22px] font-bitter font-semibold">
           Frequently Asked Questions (FAQ)

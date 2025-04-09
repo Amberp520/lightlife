@@ -1,5 +1,5 @@
 import { FaInstagram, FaLinkedin, FaMeta, FaTwitter } from "react-icons/fa6";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo2.png";
 
 const Footer = () => {
   const footerInfo = [
@@ -55,7 +55,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 py-5 lg:py-0 items-center justify-between">
-          <img src={logo} alt="" />
+          <img className="w-[11rem]  relative right-6" src={logo} alt="" />
           <div className="flex gap-10">
             <p className="text-[14px]">Privacy Policy</p>
             <p className="text-[14px]">Contact Us</p>
