@@ -1,10 +1,9 @@
-import React from "react";
 import { eventsOptions } from "../../utils/constant";
 
 const Vents = () => {
   return (
     <>
-      <div className="h-[80rem]">
+      <div className="h-fit mb-20">
         <p className="text-[1.2rem] pl-20 text-green-800 font-bitter">
           Upcoming Events ~
         </p>

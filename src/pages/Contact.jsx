@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { CiClock2, CiLocationOn, CiMail } from "react-icons/ci";
 import { PiPhoneThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import Events from "../components/home/Events";
+import Event from "../components/home/Event";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,17 +13,10 @@ const Contact = () => {
     message: "",
   });
 
-  const [name, setName] = useState("Presh");
-  console.log(name);
-
   const [isLoading, setIsLoading] = useState(false);
-  // useEffect(() => {
-  //   console.log("Hello");
-  // }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // setName(e.target.value)
   };
 
   const handleSubmit = async (e) => {
@@ -81,7 +74,7 @@ const Contact = () => {
                   <input
                     id="name"
                     name="name"
-                    value={name}
+                    value={formData.name}
                     onChange={handleChange}
                     required
                     type="text"
@@ -127,7 +120,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Events />
+      <Event />
       <Footer />
     </div>
   );

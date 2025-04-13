@@ -5,5 +5,9 @@
 }
 
 .ju {
-  color: #006400 ;
+  color: #006400;
+}
+
+.swiper {
+  overflow: hidden visible !important;
 }

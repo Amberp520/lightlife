@@ -3,7 +3,7 @@ import Banner from "../components/about/Banner";
 import History from "../components/about/History";
 import Mv from "../components/about/Mv";
 import Teams from "../components/about/Teams";
-import Events from "../components/home/Events";
+import Event from "../components/home/Event";
 import Footer from "../common/Footer";
 import FAQ from "../common/FAQ";
 
@@ -16,7 +16,7 @@ const About = () => {
       <Mv/>
       <Teams/>
       <FAQ />
-      <Events/>
+      <Event/>
       <Footer/>
     </>
   );

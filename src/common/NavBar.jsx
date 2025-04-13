@@ -3,7 +3,12 @@ import logo from "../assets/logo2.png";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
 const NavBar = () => {
-  const navOptions = ["Home", "About us", "Events", "Contact us"];
+  const navOptions = [
+    { title: "Home", link: "/" },
+    { title: "About us", link: "/about" },
+    { title: "Events", link: "/events" },
+    { title: "Contact us", link: "/contact" },
+  ];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +26,7 @@ const NavBar = () => {
       <div className="hidden lg:flex items-center gap-20">
         <div className="flex items-center gap-10">
           {navOptions.map((item, i) => (
-            <p key={i}>{item}</p>
+            <Link to={item.link} key={i}>{item.title}</Link>
           ))}
         </div>
         <div className="text-[14px] bg-primary text-white w-fit py-2 px-4 rounded-md">
@@ -44,14 +49,14 @@ const NavBar = () => {
             isOpen ? "" : "hidden"
           }`}
         >
-          {navOptions.map((text, i) => (
+          {navOptions.map((item, i) => (
             <Link
-              to={`#${text}`}
+              to={`${item.link}`}
               key={i}
               onClick={i === 4 ? removeMenu : toggleMenu}
               className={`transition duration-500 flex justify-between items-center w-full px-4 py-2 hover:bg-gray-200`}
             >
-              <div className="w-full z-10">{text}</div>
+              <div className="w-full z-10">{item.title}</div>
             </Link>
           ))}
           <div className="text-[14px] text-center bg-primary cursor-pointer text-white w-full rounded-tl-md py-2 px-4">

@@ -2,7 +2,7 @@ import Footer from "../common/Footer";
 import NavBar from "../common/NavBar";
 import Banner from "../components/home/Banner";
 import Charity from "../components/home/Charity";
-import Events from "../components/home/Events";
+import Event from "../components/home/Event";
 import Volunteers from "../components/home/Volunteers";
 import WhatWeDo from "../components/home/WhatWeDo";
 
@@ -14,7 +14,7 @@ const Home = () => {
       <WhatWeDo />
       <Charity />
       <Volunteers />
-      <Events />
+      <Event />
       <Footer />
     </>
   );
