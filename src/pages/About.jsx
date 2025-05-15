@@ -6,18 +6,22 @@ import Teams from "../components/about/Teams";
 import Event from "../components/home/Event";
 import Footer from "../common/Footer";
 import FAQ from "../common/FAQ";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <NavBar />
       <Banner />
       <History />
-      <Mv/>
-      <Teams/>
+      <Mv />
+      <Teams />
       <FAQ />
-      <Event/>
-      <Footer/>
+      <Event />
+      <Footer />
     </>
   );
 };

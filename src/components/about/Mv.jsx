@@ -25,7 +25,7 @@ const Mv = () => {
             adipisicing elit. Ducimus, nostrum.
           </p>
           <button className="py-2 px-5 bg-primary rounded-lg text-white">
-            Learn More
+            Donate Now
           </button>
         </div>
         <div className="hidden lg:block">
@@ -75,7 +75,7 @@ const Mv = () => {
             adipisicing elit. Ducimus, nostrum.
           </p>
           <button className="py-2 px-5 bg-primary rounded-lg text-white">
-            Learn More
+            Donate Now
           </button>
         </div>
       </div>

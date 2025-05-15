@@ -1,11 +1,22 @@
+import { useState } from "react";
 import line from "../../assets/home/lines/line3.svg";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const Charity = () => {
   const boxes = [
-    { title: "People", desc: "Prevention of Crueity", num: 15 },
-    { title: "Society", desc: "Direct relief", num: 145 },
-    { title: "Project", desc: "Research hospital", num: 50 },
+    { title: "People", desc: "Prevention of Crueity", duration: 2.5, num: 15 },
+    { title: "Society", desc: "Direct relief", duration: 2.5, num: 145 },
+    { title: "Project", desc: "Research hospital", duration: 2.5, num: 50 },
   ];
+
+  const [renderContent, setRenderContent] = useState(false);
+  const { ref } = useInView({
+    triggerOnce: false, // Trigger every time it enters/exits the viewport
+    onChange: (inView) => {
+      setRenderContent(inView); // Update state whenever the element enters/exits the viewport
+    },
+  });
 
   return (
     <div className="mb-5 py-20">
@@ -21,14 +32,20 @@ const Charity = () => {
         />
       </div>
       <div className="flex justify-center w-full">
-        <div className="w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          ref={ref}
+          className="w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        >
           {boxes.map((box, i) => (
             <div
               key={i}
               className="rounded-lg flex gap-2 bg-[#F3F2E7] items-center justify-center py-10"
             >
               <p className="font-bitter text-primary text-[33px] font-semibold">
-                {box.num}k+
+                {renderContent && (
+                  <CountUp end={box.num} duration={box.duration} />
+                )}
+                k+
               </p>
               <div>
                 <p>{box.title}</p>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "../common/Footer";
 import NavBar from "../common/NavBar";
 import Banner from "../components/home/Banner";
@@ -7,6 +8,9 @@ import Volunteers from "../components/home/Volunteers";
 import WhatWeDo from "../components/home/WhatWeDo";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <NavBar />

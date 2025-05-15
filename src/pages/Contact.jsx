@@ -1,7 +1,11 @@
 import Footer from "@/common/Footer";
 import Navbar from "@/common/Navbar";
 import { useEffect, useState } from "react";
-import { CiClock2, CiLocationOn, CiMail } from "react-icons/ci";
+import {
+  // CiClock2,
+  CiLocationOn,
+  CiMail,
+} from "react-icons/ci";
 import { PiPhoneThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Event from "../components/home/Event";
@@ -26,6 +30,10 @@ const Contact = () => {
       setIsLoading(false);
     }, 2000);
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div>
