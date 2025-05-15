@@ -29,7 +29,7 @@ const Donate = () => {
               meaningful impact on our cause. Thank you for playing your part
               and helping us make a difference.
             </p>
-            <form className="grid grid-cols-2 gap-3">
+            <form className="grid grid-cols-2 gap-5">
               <div className="col-span-2 flex flex-col gap-2">
                 <label className="text-[14px] font-semibold">Your Name</label>
                 <input
