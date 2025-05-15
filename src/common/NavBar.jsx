@@ -26,12 +26,17 @@ const NavBar = () => {
       <div className="hidden lg:flex items-center gap-20">
         <div className="flex items-center gap-10">
           {navOptions.map((item, i) => (
-            <Link to={item.link} key={i}>{item.title}</Link>
+            <Link to={item.link} key={i}>
+              {item.title}
+            </Link>
           ))}
         </div>
-        <div className="text-[14px] bg-primary text-white w-fit py-2 px-4 rounded-md">
+        <Link
+          to="/donate"
+          className="text-[14px] bg-primary text-white w-fit py-2 px-4 rounded-md"
+        >
           Donate Now
-        </div>
+        </Link>
       </div>
       <div className="relative block lg:hidden">
         {/* Burger Button */}
@@ -59,9 +64,12 @@ const NavBar = () => {
               <div className="w-full z-10">{item.title}</div>
             </Link>
           ))}
-          <div className="text-[14px] text-center bg-primary cursor-pointer text-white w-full rounded-tl-md py-2 px-4">
+          <Link
+            to="/donate"
+            className="text-[14px] text-center bg-primary cursor-pointer text-white w-full rounded-tl-md py-2 px-4"
+          >
             Donate Now
-          </div>
+          </Link>
         </div>
       </div>
     </div>

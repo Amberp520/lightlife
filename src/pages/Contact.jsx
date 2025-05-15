@@ -9,6 +9,7 @@ import {
 import { PiPhoneThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Event from "../components/home/Event";
+import { Map } from "../utils/map";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ const Contact = () => {
               <p className="font-light text-[30px]">Email Address</p>
               <div className="flex items-center gap-2">
                 <CiMail className="text-[25px]" />
-                <Link className="text-gray-500">info@rheen.com.ng</Link>
+                <Link className="text-gray-500">info@lightlife.com.ng</Link>
               </div>
             </div>
             {/* <div className="flex flex-col gap-4 mb-14">
@@ -127,6 +128,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <Map />
       </div>
       <Event />
       <Footer />
