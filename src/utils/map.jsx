@@ -8,7 +8,7 @@ const containerStyle = {
 };
 
 // Center at some default coordinates
-const center = { lat: 40.7128, lng: -74.006 }; // NYC
+const center = { lat: 6.469491, lng: 7.474821 }; // NYC
 
 export const Map = () => {
   const { isLoaded, loadError } = useLoadScript({
@@ -27,9 +27,11 @@ export const Map = () => {
     );
 
   return (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-      {/* Example marker */}
-      <Marker position={center} />
-    </GoogleMap>
+    <div className="mb-[270px]">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
+        {/* Example marker */}
+        <Marker position={center} />
+      </GoogleMap>
+    </div>
   );
 };

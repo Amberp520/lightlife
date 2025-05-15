@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="mx-auto container mb-[270px]">
+      <div className="mx-auto container mb-10">
         <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 shadow-md lg:mx-12 lg:mt-12 p-5 lg:p-12">
           {/* Left Section */}
           <div>
@@ -128,8 +128,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <Map />
       </div>
+      <Map />
       <Event />
       <Footer />
     </div>
