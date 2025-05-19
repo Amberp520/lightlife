@@ -11,3 +11,7 @@
 .swiper {
   overflow: hidden visible !important;
 }
+
+.no_swiper::-webkit-scrollbar {
+  display: none;
+}
