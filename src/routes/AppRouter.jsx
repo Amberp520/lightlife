@@ -8,5 +8,5 @@ export const AppRouter = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/events", element: <Events/>}
+  { path: "/events", element: <Events/>},
 ]);
