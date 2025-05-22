@@ -1,5 +1,3 @@
-import Footer from "../common/Footer";
-import Navbar from "../common/Navbar";
 import { useEffect, useState } from "react";
 import {
   // CiClock2,
@@ -10,6 +8,8 @@ import { PiPhoneThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Event from "../components/home/Event";
 import { Map } from "../utils/map";
+import NavBar from "../common/Navbar";
+import Footer from "../common/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavBar />
       <div className="mx-auto container mb-10">
         <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 shadow-md lg:mx-12 lg:mt-12 p-5 lg:p-12">
           {/* Left Section */}
