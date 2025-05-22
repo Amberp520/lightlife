@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo2.png";
-import { CiMenuFries } from "react-icons/ci";
+import { motion, AnimatePresence } from "framer-motion";
+import { CiMenuFries, 
+  // CiClose 
+} from "react-icons/ci";
 import { useState } from "react";
-const NavBar = () => {
+import logo from "../assets/logo2.png";
+import { RxCross2 } from "react-icons/rx";
+
+export default function NavBar() {
   const navOptions = [
     { title: "Home", link: "/" },
     { title: "About us", link: "/about" },
@@ -12,68 +17,90 @@ const NavBar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    console.log(isOpen);
-  };
-  const removeMenu = () => {
-    toggleMenu();
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="h-20 sticky top-0 left-0 z-[100] flex items-center justify-between glass py-4 px-5">
-      <img src={logo} alt="Logo" className="w-[12rem] object-cover" />
-      <div className="hidden lg:flex items-center gap-20">
-        <div className="flex items-center gap-10">
-          {navOptions.map((item, i) => (
-            <Link to={item.link} key={i}>
-              {item.title}
+    <>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="backdrop-blur-md shadow-md sticky z-[999] w-full top-0 left-0 flex justify-between items-center px-7 py-5"
+      >
+        <Link className="overflow-x-hidden" to="/">
+          <img
+            className="relative -left-9 h-[50px] w-[150px] object-cover"
+            src={logo}
+            alt="Logo"
+          />
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center gap-10 justify-between">
+          {navOptions.map((option, index) => (
+            <Link
+              to={option.link}
+              key={index}
+              className="text-[15px] hover:text-primary transition-colors"
+            >
+              {option.title}
             </Link>
           ))}
         </div>
-        <Link
-          to="/donate"
-          className="text-[14px] bg-primary text-white w-fit py-2 px-4 rounded-md"
-        >
-          Donate Now
-        </Link>
-      </div>
-      <div className="relative block lg:hidden">
-        {/* Burger Button */}
-        <button
-          onClick={toggleMenu}
-          className={`p-2 text-black rounded focus:outline-none`}
-        >
-          {/* Burger Icon */}
-          <CiMenuFries />
-        </button>
 
-        {/* Dropdown Menu */}
-        <div
-          className={`absolute translate-y-1 -right-5 top-[44px] w-40 bg-white text-gray-800 rounded-bl-md shadow-lg overflow-hidden z-20 ${
-            isOpen ? "" : "hidden"
-          }`}
-        >
-          {navOptions.map((item, i) => (
-            <Link
-              to={`${item.link}`}
-              key={i}
-              onClick={i === 4 ? removeMenu : toggleMenu}
-              className={`transition duration-500 flex justify-between items-center w-full px-4 py-2 hover:bg-gray-200`}
-            >
-              <div className="w-full z-10">{item.title}</div>
-            </Link>
-          ))}
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden flex items-center">
+          <button onClick={toggleMenu} className="p-2 text-black">
+            {isOpen ? (
+              <RxCross2 className="w-6 h-6" />
+            ) : (
+              <CiMenuFries className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Desktop Donate Button */}
+        <div className="hidden lg:flex text-[15px] font-semibold items-center gap-5 justify-between">
           <Link
             to="/donate"
-            className="text-[14px] text-center bg-primary cursor-pointer text-white w-full rounded-tl-md py-2 px-4"
+            className="py-2 px-4 rounded-md bg-primary text-white hover:bg-primary-dark transition-colors"
           >
             Donate Now
           </Link>
         </div>
-      </div>
-    </div>
-  );
-};
+      </motion.div>
 
-export default NavBar;
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-100%" }}
+            className="flex flex-col gap-5 lg:hidden fixed px-10 h-screen w-full bg-white shadow-lg z-[200] top-[0] pt-[106px] left-0"
+          >
+            {navOptions.map((item, i) => (
+              <Link
+                to={item.link}
+                key={i}
+                onClick={toggleMenu}
+                className="text-[16px] text-gray-800 hover:text-primary transition-colors"
+              >
+                {item.title}
+              </Link>
+            ))}
+            <div className="flex flex-col w-full gap-3 mt-5">
+              <Link
+                onClick={toggleMenu}
+                to="/donate"
+                className="py-2 w-full flex justify-center bg-primary text-white rounded-md hover:bg-primary-dark transition-colors"
+              >
+                Donate Now
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
