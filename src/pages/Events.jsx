@@ -1,9 +1,9 @@
 import Banner from "../components/events/Banner";
-import NavBar from "../common/NavBar";
+import NavBar from "../common/NavBarCom";
 import Testimonials from "../components/events/Testimonials";
 import JoinUs from "../components/events/JoinUs";
 import Event from "../components/home/Event";
-import Footer from "../common/Footer";
+import Footer from "../common/FooterCom";
 import FAQ from "../common/FAQ";
 import { useEffect } from "react";
 import VentsCom from "../components/events/VentsCom";

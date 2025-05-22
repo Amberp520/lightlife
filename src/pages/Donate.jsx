@@ -1,6 +1,6 @@
-import NavBar from "../common/NavBar";
+import NavBar from "../common/NavBarCom";
 import img from "../assets/donate.jpg";
-import Footer from "../common/Footer";
+import Footer from "../common/FooterCom";
 import Event from "../components/home/Event";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";

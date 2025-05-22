@@ -8,8 +8,8 @@ import { PiPhoneThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Event from "../components/home/Event";
 import { Map } from "../utils/map";
-import NavBar from "../common/Navbar";
-import Footer from "../common/Footer";
+import NavBar from "../common/NavBarCom";
+import Footer from "../common/FooterCom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

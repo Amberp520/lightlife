@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Footer from "../common/Footer";
-import NavBar from "../common/NavBar";
+import Footer from "../common/FooterCom";
+import NavBar from "../common/NavBarCom";
 import Banner from "../components/home/Banner";
 import Charity from "../components/home/Charity";
 import Event from "../components/home/Event";
