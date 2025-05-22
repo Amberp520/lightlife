@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import event1 from "../../assets/home/event1.png";
 import event2 from "../../assets/home/event2.png";
 import line from "../../assets/home/lines/line5.svg";
@@ -19,9 +20,11 @@ const Event = () => {
             local <br className="hidden lg:block" /> agenda. Explore how
             communities are <br /> implementing the SDGs across the country.
           </p>
-          <button className="rounded-md text-[14px] py-2 px-5 bg-primary text-white">
-            View event
-          </button>
+          <Link to="/events">
+            <button className="rounded-md text-[14px] py-2 px-5 bg-primary text-white">
+              View event
+            </button>
+          </Link>
         </div>
         <div className="hidden lg:flex relative gap-5 h-full">
           <div className="flex items-start h-full">
