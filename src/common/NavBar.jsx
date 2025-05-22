@@ -5,6 +5,7 @@ import { CiMenuFries,
 } from "react-icons/ci";
 import { useState } from "react";
 import logo from "../assets/logo2.png";
+import { RxCross2 } from "react-icons/rx";
 
 export default function NavBar() {
   const navOptions = [
@@ -51,7 +52,7 @@ export default function NavBar() {
         <div className="lg:hidden flex items-center">
           <button onClick={toggleMenu} className="p-2 text-black">
             {isOpen ? (
-              <CiMenuFries className="w-6 h-6" />
+              <RxCross2 className="w-6 h-6" />
             ) : (
               <CiMenuFries className="w-6 h-6" />
             )}
@@ -62,7 +63,7 @@ export default function NavBar() {
         <div className="hidden lg:flex text-[15px] font-semibold items-center gap-5 justify-between">
           <Link
             to="/donate"
-            className="py-2 px-4 rounded-sm bg-primary text-white hover:bg-primary-dark transition-colors"
+            className="py-2 px-4 rounded-md bg-primary text-white hover:bg-primary-dark transition-colors"
           >
             Donate Now
           </Link>
