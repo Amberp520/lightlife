@@ -1,5 +1,5 @@
-import Footer from "@/common/Footer";
-import Navbar from "@/common/Navbar";
+import Footer from "../common/Footer";
+import Navbar from "../common/Navbar";
 import { useEffect, useState } from "react";
 import {
   // CiClock2,
