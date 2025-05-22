@@ -1,6 +1,6 @@
 import { eventsOptions } from "../../utils/constant";
 
-const Vents = () => {
+const VentsCom = () => {
   return (
     <>
       <div className="h-fit mb-20">
@@ -34,4 +34,4 @@ const Vents = () => {
   );
 };
 
-export default Vents;
+export default VentsCom;
