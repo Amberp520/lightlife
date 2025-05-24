@@ -5,7 +5,6 @@ import {
   CiMail,
 } from "react-icons/ci";
 import { PiPhoneThin } from "react-icons/pi";
-import { Link } from "react-router-dom";
 import Event from "../components/home/Event";
 import { Map } from "../utils/map";
 import NavBar from "../common/NavBarCom";
@@ -47,7 +46,7 @@ const Contact = () => {
               <p className="font-light text-[30px]">Address</p>
               <address className="flex items-center gap-2 not-italic">
                 <CiLocationOn className="text-[25px]" />
-                <p className="text-gray-500">Plot 658/659 Arab Road, LA, CA.</p>
+                <p className="text-gray-500">No 5/6 km onitsha express way Enugu.</p>
               </address>
             </div>
             <div className="flex flex-col gap-4 mb-14">
@@ -61,7 +60,7 @@ const Contact = () => {
               <p className="font-light text-[30px]">Email Address</p>
               <div className="flex items-center gap-2">
                 <CiMail className="text-[25px]" />
-                <Link className="text-gray-500">info@lightlife.com.ng</Link>
+                <a href="mailto:mathiasemenike@gmail.com" className="text-gray-500">mathiasemenike@gmail.com</a>
               </div>
             </div>
             {/* <div className="flex flex-col gap-4 mb-14">

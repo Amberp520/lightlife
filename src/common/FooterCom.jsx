@@ -6,10 +6,10 @@ const Footer = () => {
     {
       title: "NEW YORK OFFICE",
       details: [
-        "United Nations Foundation",
-        "320 East 43rd Street, 3rd Floor",
-        "New York, NY 10017",
-        "Phone: 212.697.3315",
+        "Light & Life Foundation",
+        "No 5/6 km onitsha express way Enugu",
+        "Enugu, Nigeria",
+        "Phone: +234813820230",
       ],
     },
     {
