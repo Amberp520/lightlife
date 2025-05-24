@@ -68,7 +68,7 @@ const Footer = () => {
             src={logo}
             alt=""
           />
-          <div className="flex gap-10">
+          <div className="flex flex-wrap gap-10">
             <p className="text-[14px]">Privacy Policy</p>
             <p className="text-[14px]">Contact Us</p>
             <div className="h-[25px] w-[2px] bg-white" />

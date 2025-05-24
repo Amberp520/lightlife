@@ -68,7 +68,7 @@ const Volunteers = () => {
       <div className="flex mb-10 gap-4 items-center">
         <p className="text-2xl mb-2 font-bold text-gray-800">Love</p>
         <img
-          className="opacity-50 w-[300px] md:w-[600px] lg:w-[800px] xl:w-full"
+          className="opacity-50 w-[200px] md:w-[600px] lg:w-[800px] xl:w-full"
           src={line}
           alt="line"
         />
