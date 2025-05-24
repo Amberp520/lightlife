@@ -17,13 +17,15 @@ export const Map = () => {
 
   if (loadError)
     return (
-      <p className="flex justify-center items-center h-[400px]">
+      <p className="flex justify-center items-center h-[400px] mb-[270px]">
         Error loading maps
       </p>
     );
   if (!isLoaded)
     return (
-      <p className="flex justify-center items-center h-[400px]">Loading map…</p>
+      <p className="flex justify-center items-center h-[400px] mb-[270px]">
+        Loading map…
+      </p>
     );
 
   return (
