@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { CiMenuFries, 
-  // CiClose 
+import {
+  CiMenuFries,
+  // CiClose
 } from "react-icons/ci";
 import { useState } from "react";
 import logo from "../assets/logo2.png";
 import { RxCross2 } from "react-icons/rx";
 
 export default function NavBar() {
+  const pathname = window.location.pathname;
   const navOptions = [
     { title: "Home", link: "/" },
     { title: "About us", link: "/about" },
@@ -41,9 +43,13 @@ export default function NavBar() {
             <Link
               to={option.link}
               key={index}
-              className="text-[15px] hover:text-primary transition-colors"
+              className={
+                "flex flex-col items-center text-[15px] hover:text-primary transition-colors" +
+                (pathname === option.link ? " text-primary font-semibold" : "")
+              }
             >
               {option.title}
+              {/* {pathname === option.link && <div className="h-[4px] w-[4px] rounded-full bg-primary" />} */}
             </Link>
           ))}
         </div>
